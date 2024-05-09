@@ -1,0 +1,178 @@
+body.health{
+  main{
+
+    #wide-visual{
+      margin-top: 33px;
+    }
+
+    .main-cont{
+      padding-top: 45px;
+      @include SP{
+        padding-top: 30px;
+      };
+      .inner{
+        h2{
+          font-family: $noto2;
+          @include font-size(24);
+          @include letter-spacing(0);
+          text-align: center;
+          position: relative;
+          padding-bottom: 42px;
+          font-weight: 600;
+          @include SP{
+            @include font-size(18);
+            padding-bottom: 34px;
+          };
+          &:after{
+            content:"";
+            width: 165px;
+            height: 1px;
+            display: block;
+            position: absolute;
+            background-color: #2E5C3D;
+            top:auto;
+            bottom: 0;
+            left:0;
+            right:0;
+            margin:auto;
+          }
+        }
+        .caption{
+          @include font-size(18);
+          @include letter-spacing(0);
+          line-height:2em;
+          font-family: $noto2;
+          font-weight: 500;
+          text-align: center;
+          margin-top: 40px;
+          font-weight: 500;
+          @include SP{
+            @include font-size(16);
+            text-align: left;
+          };
+        }
+        .cont{
+          margin-top: 62px;
+          @include SP{
+            margin-top: 30px;
+          };
+          .item{
+            padding-top: 40px;
+            margin-bottom: 75px;
+            border-top: 1px solid $gray;
+            display: flex;
+            justify-content: space-between;
+            @include SP{
+              flex-direction: column;
+              padding-top: 0;
+              border-top: none;
+              margin-bottom: 40px;
+            };
+            &:last-child{
+              margin-bottom: 0;
+            }
+            &:nth-child(even){
+              flex-direction: row-reverse;
+              @include SP{
+                flex-direction: column;
+              };
+            }
+            figure{
+              width: 46%;
+              @include SP{
+                width: 100%;
+                margin-bottom: 20px;
+              };
+            }
+            .text-cont{
+              width: calc(100% - 46% - 40px);
+              @media screen and (max-width: 1200px) {
+                width: calc(100% - 46% - 30px);
+              }
+              @include SP{
+                width: 100%;
+              };
+              p{
+                @include font-size(16);
+                @include letter-spacing(0);
+                line-height:2em;
+                @include SP{
+                  @include font-size(14);
+                  line-height:1.78571429em;
+                };
+              }
+              ol{
+                background-color: rgba(#D0D0D0,0.36);
+                padding: 20px 40px;
+                margin: 15px auto 29px;
+                width: calc(100% - 100px);
+                @media screen and (max-width: 1200px) {
+                  width: 100%;
+                }
+                @include SP{
+                  width: 100%;
+                  margin: 15px 0 20px;
+                };
+                li{
+                  @include font-size(16);
+                  @include letter-spacing(0);
+                  line-height:2em;
+                  font-family: $noto2;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #upper{
+      margin-bottom: 140px;
+      @include SP{
+        margin-bottom: 20px;
+      };
+    }
+
+    #lower{
+      margin-bottom: 101px;
+      @include SP{
+        margin-bottom: 40px;
+      };
+    }
+
+    .wide-ban{
+      background-image: url(../images/about/commitment/health/img6.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 365px;
+      width: 100%;
+      color:white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $noto2;
+      font-weight: 600;
+      @include font-size(35);
+      @include letter-spacing(75);
+      line-height: 1em;
+      @include SP{
+        height: 200px;
+        background-image: url(../images/about/commitment/health/img6_sp.jpg);
+        @include font-size(22);
+      };
+    }
+
+    .link{
+      margin-top: 85px;
+      margin-bottom: 22px;
+      @include SP{
+        margin-top: 49px;
+        margin-bottom: 0;
+      };
+    }
+
+
+  }
+}

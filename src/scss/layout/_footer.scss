@@ -1,0 +1,145 @@
+.pagetop {
+  position: absolute;
+  width: 40px;
+  bottom: 64px;
+  right: 16px;
+}
+
+.footer {
+  position: relative;
+  background: url(../images/common/bg_footer.jpg)center center/cover no-repeat;
+  padding: 62px 0 56px;
+  @include SP {
+    padding: 35px 0 50px;
+    background: url(../images/common/bg_footer_sp.jpg)center center/cover no-repeat;
+  }
+  &__top {
+    @include display-flex();
+    @include justify-content(space-between);
+    @include SP {
+      display: block;
+    }
+    .left {
+      .logo {
+        display: block;
+        width: 226px;
+        margin: 0 0 40px;
+        @include SP {
+          width: 181px;
+          margin: 0 auto 19px;
+        }
+      }
+      .sns-list {
+        @include display-flex();
+        @include align-items(center);
+        @include SP {
+          margin: 0 auto 48px;
+          @include justify-content(center);
+        }
+        li {
+          width: 40px;
+          margin: 0 26px 0 0;
+          @include SP {
+            margin: 0 13px 0;
+          }
+        }
+      }
+    }
+    .right {
+      @include display-flex();
+      @include SP {
+        display: block;
+      }
+      .box {
+        margin-left: 75px;
+        @include SP {
+          margin: 0 0 0;
+        }
+        a[target="_blank"] {
+          span {
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 1px;
+              right: -12px;
+              width: 16px;
+              height: 16px;
+              display: inline-block;
+              position: relative;
+              top: 1px;
+              background: url(../images/common/icon_link.svg)center center/cover no-repeat;
+            }
+          }
+        }
+        span {
+          @include font-size(16);
+          display: block;
+          margin: 0 0 22px;
+          @include SP{
+            padding: 0 0 15px;
+            border-bottom: 1px solid #4D4D4D;
+            margin: 0 0 42px;
+          }
+          &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid #707070;
+            border-right: 1px solid #707070;
+            @include transform(rotate(45deg));
+            display: inline-block;
+            margin-right: 12px;
+            position: relative;
+            top: -3px;
+            @include SP {
+              content: none;
+            }
+          }
+        }
+        ul {
+          margin-left: 20px;
+          @include SP {
+            margin: -22px 0 50px;
+          }
+          li {
+            @include font-size(13);
+            line-height: 1.2;
+            margin: 0 0 15px;
+            @include SP {
+              margin: 0 0 26px;
+            }
+            &:before {
+              content: "・　";
+              @include SP {
+                content: "-";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin: 50px 0 0;
+    small {
+      @include font-size(13);
+      display: block;
+      margin: 0 0 12px;
+      @include SP {
+        text-align: left;
+        margin: 0 0 28px;
+      }
+    }
+    span {
+      @include font-size(14);
+      letter-spacing: 0.075em;
+      font-family: roboto;
+      @include SP {
+        margin-top: 43px;
+        display: block;
+      }
+    }
+  }
+}

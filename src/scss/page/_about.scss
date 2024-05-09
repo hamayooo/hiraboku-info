@@ -1,0 +1,516 @@
+body.about {
+    main {
+
+      .read {
+        margin: 25px 0 0;
+        height: 333px;
+        background: url(../images/about/mv.jpg)center center/cover no-repeat;
+        @include SP {
+          margin: 35px 0 0;
+          height: 425px;
+          padding: 0 0 20px;
+          background: url(../images/about/mv_sp.jpg)center center/cover no-repeat;
+        }
+        .inner {
+          height: 100%;
+          @include display-flex();
+          @include align-items(center);
+          @include justify-content(center);
+        }
+        p {
+          text-align: center;
+          color: #fff;
+          font-family: $noto2;
+          font-weight: 500;
+          @include font-size(25);
+          line-height: 2;
+          @include SP {
+            @include font-size(18);
+          }
+        }
+      }
+
+      .statement {
+        padding: 85px 0 297px;
+        background: url(../images/about/bg.png)center bottom/100% auto no-repeat;
+        @include SP {
+          padding: 30px 0 170px;
+          background: url(../images/about/bg_sp.png)center bottom/100% auto no-repeat;
+        }
+        &__title {
+          color: #2E5C3D;
+          font-family: $noto2;
+          text-align: center;
+          margin: 0 0 72px;
+          @include SP {
+            margin: 0 0 28px;
+          }
+          small {
+            display: block;
+            font-family: $vollkorn;
+            @include font-size(30);
+            letter-spacing: 0.01em;
+            margin: 0 0 28px;
+            @include SP {
+              @include font-size(20);
+              margin: 0 0 20px;
+            }
+          }
+          strong {
+            display: block;
+            @include font-size(40);
+            letter-spacing: 0.075em;
+            font-weight: 700;
+            @include SP {
+              @include font-size(25);
+              line-height: 2;
+            }
+          }
+        }
+        .img-text {
+          @include display-flex();
+          @include justify-content(space-between);
+          margin: 0 0 108px;
+          @include SP {
+            @include flex-direction(column);
+            margin: 0 0 40px;
+          }
+          .img {
+            width: 45%;
+            height: 290px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            @include SP {
+              order: 1;
+              width: 100%;
+              height: 180px;
+              margin: 0 0 33px;
+            }
+          }
+          .text {
+            width: 50%;
+            margin: -14px 0 0;
+            @include SP {
+              order: 2;
+              width: 100%;
+            }
+            p {
+              @include font-size(20);
+              line-height: 2.5;
+              font-family: $noto2;
+              font-weight: 300;
+              @include SP {
+                @include font-size(14);
+                line-height: 2;
+              }
+            }
+          }
+        }
+      }
+
+
+      .philosophy {
+        background: url(../images/about/bg02.jpg)center center/cover no-repeat;
+        text-align: center;
+        padding: 92px 0 82px;
+        @include SP {
+          padding: 32px 0 70px;
+        }
+        &__title {
+          margin: 0 0 60px;
+          @include SP {
+            margin: 0 0 32px;
+          }
+          &:after {
+            content: "";
+            width: 165px;
+            height: 2px;
+            display: block;
+            background: #fff;
+            margin: 0 auto 0;
+            @include SP {
+              width: 120px;
+            }
+          }
+          small {
+            color: #2E5C3D;
+            font-family: $vollkorn;
+            @include font-size(30);
+            letter-spacing: 0.01em;
+            display: block;
+            margin: 0 0 15px;
+            @include SP {
+              @include font-size(20);
+              margin: 0 0 18px;
+            }
+          }
+          span {
+            font-family: $noto2;
+            font-weight: 500;
+            @include font-size(30);
+            letter-spacing: 0.075em;
+            display: block;
+            line-height: 2;
+            margin: 0 0 28px;
+            @include SP {
+              @include font-size(20);
+              margin: 0 0 18px;
+            }
+          }
+          strong {
+            color: #2E5C3D;
+            font-family: $noto2;
+            font-weight: 700;
+            @include font-size(40);
+            letter-spacing: 0.075em;
+            display: block;
+            margin: 0 0 28px;
+            @include SP {
+              @include font-size(35);
+              letter-spacing: 0;
+              margin: 0 0 18px;
+            }
+          }
+        }
+        &__img {
+          max-width: 436px;
+          margin: 0 auto 53px;
+          @include SP {
+            max-width: 252px;
+            margin: 0 auto 32px;
+          }
+        }
+        &__text {
+          font-family: $noto2;
+          font-weight: 500;
+          @include font-size(22);
+          letter-spacing: 0.075em;
+          line-height: 2;
+          @include SP {
+            @include font-size(16);
+            font-weight: 300;
+          }
+        }
+        &__box {
+          margin: 50px 0 0;
+          @include SP {
+            margin: 28px 0 0;
+          }
+          ul {
+            @include display-flex();
+            @include justify-content(space-between);
+            margin: 0 0 48px;
+            @include SP {
+              margin: 0 0 28px;
+            }
+            li {
+              width: 25.7%;
+              @include SP {
+                width: 29.94%;
+              }
+              span {
+                @include display-flex();
+                @include justify-content(center);
+                @include align-items(center);
+                background: #fff;
+                height: 78px;
+                @include font-size(45);
+                letter-spacing: 0.1em;
+                font-family: $noto2;
+                font-weight: 700;
+                padding: 0 0 4px;
+                color: #1F5223;
+                margin: 0 0 40px;
+                @include SP {
+                  height: 48px;
+                  @include font-size(22);
+                  padding: 0 0 2px;
+                }
+              }
+              .text {
+                border-top: 3px solid #fff;
+                border-bottom: 3px solid #fff;
+                @include display-flex();
+                @include justify-content(center);
+                @include align-items(center);
+                height: 150px;
+                @include SP {
+                  height: 100px;
+                  border-top: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  @include align-items(flex-start);
+                  padding: 8px 12px;
+                }
+                p {
+                  font-weight: 300;
+                  line-height: 2;
+                  @include font-size(20);
+                  @include SP {
+                    @include font-size(13);
+                    line-height: 1.615;
+                    text-align: left;
+                  }
+                }
+
+              }
+            }
+          }
+          p {
+            font-weight: 300;
+            line-height: 2;
+            @include font-size(20);
+            @include SP {
+              @include font-size(14);
+              line-height: 2;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+
+
+      .message {
+        padding: 158px 0 108px;
+        @include SP {
+          padding: 45px 0 45px;
+        }
+        strong {
+          font-family: $noto2;
+          font-weight: 700;
+          color: #1F5223;
+          @include font-size(40);
+          display: block;
+          @include SP {
+            text-align: center;
+            @include font-size(25);
+            margin: 0 0 30px;
+          }
+        }
+        p {
+          @include SP {
+            @include font-size(14);
+            line-height: 2;
+            font-weight: 300;
+          }
+        }
+        &__img-text {
+          @include display-flex();
+          @include justify-content(space-between);
+          @include SP {
+            padding: 0 18px;
+            margin: 0 0 30px;
+          }
+          .img {
+            width: 29.2%;
+            @include SP {
+              width: 150px;
+            }
+            img {
+              box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            }
+          }
+          .text {
+            width: 61.4%;
+            @include SP {
+              width: calc(100% - 176px);
+            }
+            strong {
+              font-family: $noto2;
+              font-weight: 700;
+              color: #1F5223;
+              @include font-size(40);
+              display: block;
+            }
+            small {
+              font-family: $noto2;
+              font-weight: 700;
+              @include font-size(16);
+              display: block;
+              margin: 40px 0 27px;
+              @include SP {
+                @include font-size(16);
+                line-height: 1.875;
+                margin: 30px 0 20px;
+              }
+            }
+            span {
+              font-family: $noto2;
+              font-weight: 700;
+              @include font-size(20);
+              display: block;
+            }
+            p {
+              @include font-size(16);
+              line-height: 2;
+              font-weight: 300;
+              margin: 32px 0 0;
+            }
+          }
+        }
+      }
+
+
+      .banner-list {
+        .banner {
+          height: 365px;
+          margin: 0 0 5px;
+          color: #fff;
+          text-align: center;
+          @include display-flex();
+          @include align-items(center);
+          @include justify-content(center);
+          @include flex-direction(column);
+          @include SP {
+            height: 200px;
+            margin: 0 0 3px;
+          }
+          h3 {
+            strong {
+              font-family: $noto2;
+              @include font-size(35);
+              letter-spacing: 0.075em;
+              font-weight: 700;
+              display: block;
+              margin: 0 0 18px;
+              @include SP {
+                @include font-size(22);
+                margin: 0 0 0px;
+                line-height: 1.7;
+              }
+            }
+            small {
+              font-family: $vollkorn;
+              @include font-size(30);
+              letter-spacing: 0.075em;
+              display: block;
+              @include SP {
+                @include font-size(20);
+                line-height: 1.4;
+              }
+            }
+          }
+          p {
+            text-align: left;
+            @include font-size(16);
+            letter-spacing: 0.075em;
+            line-height: 1.875;
+            font-weight: 300;
+            margin: 24px 0 0;
+            @include SP {
+              @include font-size(13);
+              line-height: 1.69;
+              margin: 1px 0 0;
+            }
+          }
+          ul {
+            @include display-flex();
+            @include justify-content(center);
+            margin: 42px 0 0;
+            @include SP {
+              display: block;
+              margin: 18px 0 0;
+            }
+            li {
+              font-family: $noto2;
+              @include font-size(22);
+              font-weight: 700;
+              margin: 0 41px;
+              @include SP {
+                @include font-size(16);
+                line-height: 1.9;
+              }
+            }
+          }
+        }
+        .banner01 {
+          background: url(../images/about/banner01.jpg)center center/cover no-repeat;
+        }
+        .banner02 {
+          background: url(../images/about/banner02.jpg)center center/cover no-repeat;
+        }
+        .banner03 {
+          background: url(../images/about/banner03.jpg)center center/cover no-repeat;
+        }
+      }
+
+
+
+      .info {
+        padding: 100px 0 140px;
+        background: url(../images/about/bg02.jpg)center center/cover no-repeat;
+        margin: 10px 0 0;
+        text-align: right;
+        @include SP {
+          margin: 5px 0 0;
+          padding: 46px 0 80px;
+        }
+        h2 {
+          font-family: $noto2;
+          @include font-size(40);
+          font-weight: 700;
+          color: #1F5223;
+          text-align: center;
+          margin: 0 0 100px;
+          @include SP {
+            @include font-size(25);
+            margin: 0 0 54px;
+          }
+        }
+        &__table {
+          width: 100%;
+          @include SP {
+            width: 100%;
+            display: block;
+            padding: 0 16px;
+          }
+          tr {
+            @include SP {
+              width: 100%;
+              display: block;
+              margin: 0 0 35px;
+            }
+            th {
+              width: 311px;
+              padding: 33px 0 13px;
+              @include font-size(18);
+              font-weight: 700;
+              color: #1F5223;
+              line-height: 1.4;
+              border-bottom: 1px solid #4D4D4D;
+              @include SP {
+                width: 100%;
+                display: block;
+                padding: 0 0 12px;
+                margin: 0 0 5px;
+              }
+            }
+            td {
+              width:calc(100% - 311px);
+              padding: 33px 0 13px;
+              @include font-size(18);
+              line-height: 1.4;
+              font-weight: 300;
+              border-bottom: 1px solid #4D4D4D;
+              @include SP {
+                width: 100%;
+                display: block;
+                padding: 0;
+                border: none;
+              }
+            }
+          }
+        }
+        .more {
+          margin: 85px 0 0;
+          @include SP {
+            margin: 60px 0 0;
+          }
+        }
+      }
+
+
+
+
+
+    }
+}

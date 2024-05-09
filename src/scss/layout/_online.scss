@@ -1,0 +1,143 @@
+.onlineshop {
+  padding: 78px 0 64px;
+  @include SP {
+    padding: 70px 0 18px;
+  }
+  .inner {
+    height: 100%;
+  }
+  &__box {
+    max-width: 800px;
+    margin: 0 auto;
+    @include display-flex();
+    @include flex-wrap(wrap);
+    .btn {
+      width: calc((100% - 40px) / 3);
+      height: 68px;
+      border: 1px solid #4D4D4D;
+      margin-right: 20px;
+      display: block;
+      @include display-flex();
+      @include align-items(center);
+      @include justify-content(center);
+      font-family: $noto2;
+      letter-spacing: 0.075em;
+      @include font-size(20);
+      font-weight: 700;
+      position: relative;
+      transition: 0.3s;
+      @include SP {
+        width: 252px;
+        margin: 0 auto 18px;
+      }
+      &:before {
+        content: "";
+        width: 0;
+        height: 100%;
+        position: absolute;
+        background: #2E5C3D;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+      }
+      &:hover {
+        color: #fff;
+        opacity: 1;
+        &:before {
+          width: 100%;
+        }
+        span {
+          &:after {
+            background: url(../images/common/icon_link_wht.svg)center center/cover no-repeat;
+          }
+        }
+      }
+      span {
+        position: relative;
+        &:after {
+          content: "";
+          width: 19px;
+          height: 19px;
+          display: inline-block;
+          // right: -35px;
+          top: 1px;
+          position: relative;
+          margin-left: 17px;
+          transition: .3s;
+          // position: absolute;
+          background: url(../images/common/icon_link.svg)center center/cover no-repeat;
+        }
+      }
+      &:nth-of-type(1){
+        margin-right: 0;
+      }
+      &:nth-of-type(4){
+        margin-right: 0;
+        @include SP {
+          margin-right: auto;
+        }
+      }
+    }
+    .btn01 {
+      width: 100%;
+      // height: auto;
+      height:232px;
+      margin: 0 0 24px;
+      padding: 48px 0 0;
+      @include flex-direction(column);
+      @include SP {
+        text-align: left;
+        display: block;
+        padding: 20px 0px 0;
+        position: relative;
+        height:auto;
+      }
+      &:hover {
+        .jp {
+          color: #fff;
+        }
+      }
+      .jp {
+        @include font-size(30);
+        color: #2E5C3D;
+        transition: 0.3s;
+        @include SP {
+          @include font-size(22);
+          display: block;
+          margin-left: 26px;
+          position: static;
+        }
+        &:after {
+          margin-left: 24px;
+          top: -2px;
+          @include SP {
+            position: absolute;
+            top: 34px;
+            right: 26px;
+          }
+        }
+      }
+      .en {
+        @include SP {
+          color: #2E5C3D;
+          margin-left: 26px;
+          margin-top: 6px;
+          @include font-size(20);
+          display: block;
+          font-family: $vollkorn;
+          &:after {
+            content: none;
+          }
+        }
+      }
+      .img {
+        position: relative;
+        margin: 36px 0 0;
+        max-width: 100%;
+        @include SP {
+          margin: 18px 0 0;
+        }
+      }
+    }
+  }
+}

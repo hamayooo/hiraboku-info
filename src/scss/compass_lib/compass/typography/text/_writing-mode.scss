@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------------------------------------------------
+writing-mode mixin
+    Usage:
+        $orientation    v (vertical)
+                        h (horizontal)
+		$direction      rl (right to left)
+						lr (left to right)
+----------------------------------------------------------------------------------------------------------*/
+@mixin writing-mode( $orientation: h, $direction: rl )
+{
+    @if $orientation == v {
+        // Vertical with direction, rl by default
+        -ms-writing-mode: tb- + $direction;            		// IE
+        -webkit-writing-mode: vertical- + $direction;  		// Chrome/Safari
+        -moz-writing-mode: vertical- + $direction;       	// Firefox
+        -o-writing-mode: vertical- + $direction;       		// Opera
+        writing-mode: vertical- + $direction;				// Others
+    } @else {
+        // Default...
+        -ms-writing-mode: lr-tb;            		// IE
+        -webkit-writing-mode: horizontal-tb;  	    // Chrome/Safari
+        -moz-writing-mode: horizontal-tb;       	// Firefox
+        -o-writing-mode: horizontal-tb;       	    // Opera
+        writing-mode: horizontal-tb;				// Others
+    }
+}

@@ -1,0 +1,303 @@
+body.history {
+    main {
+
+      .content {
+        padding: 68px 0 0;
+        &__wrap {
+          padding-left: 163px;
+          position: relative;
+          @include SP {
+            padding: 0;
+          }
+          &:before {
+            content: "";
+            width: 1px;
+            height: 95%;
+            display: block;
+            background: #4D4D4D;
+            position: absolute;
+            left: 55px;
+            top: 0;
+            @include SP {
+              content: none;
+            }
+          }
+          .box {
+            position: relative;
+            margin: 0 0 67px;
+            .year {
+              position: absolute;
+              top: 0;
+              left: -163px;
+              @include display-flex();
+              @include align-items(center);
+              @include justify-content(center);
+              border-radius: 50%;
+              border: 1px solid #4D4D4D;
+              @include font-size(25);
+              letter-spacing: 0.2em;
+              font-weight: 700;
+              font-family: $noto2;
+              width: 110px;
+              height: 110px;
+              background: #fff;
+              color: #2E5C3D;
+              @include SP {
+                width: 61px;
+                height: 61px;
+                z-index: +1;
+                left: 0;
+                top: -42px;
+                @include font-size(16);
+              }
+            }
+            .read {
+              background: url(../images/about/history/bg.jpg)center center/cover no-repeat;
+              padding: 38px 24px 64px 34px;
+              @include SP {
+                width: calc(100% + 32px);
+                margin: 0 -16px;
+                padding: 26px 16px 28px;
+              }
+              h2 {
+                @include font-size(22);
+                line-height: 1.4;
+                font-weight: 500;
+                font-family: $noto2;
+                padding: 0 0 20px;
+                border-bottom: 1px solid #4D4D4D;
+                @include SP {
+                  @include font-size(20);
+                  line-height: 1.45;
+                  padding: 0 0 10px;
+                  font-weight: 700;
+                }
+              }
+              .text-img {
+                margin: 32px 0 0;
+                @include display-flex();
+                @include justify-content(space-between);
+                @include SP {
+                  display: block;
+                  margin: 12px 0 0;
+                }
+                .text {
+                  width: 55.28%;
+                  @include SP {
+                    width: 100%;
+                    margin: 0 0 18px;
+                  }
+                  p {
+                    @include font-size(16);
+                    line-height: 1.875;
+                    font-weight: 500;
+                    font-family: $noto2;
+                    @include SP {
+                      @include font-size(14);
+                      line-height: 1.785;
+                    }
+                  }
+                }
+                .img {
+                  width: 38.65%;
+                  height: 100%;
+                  text-align: center;
+                  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+                  @include SP {
+                    width: 100%;
+                  }
+                }
+                .logo {
+                  box-shadow: none;
+                  img {
+                    margin-left: 30px;
+                    @include SP {
+                      margin: 26px 0 10px;
+                      width: 174px;
+                    }
+                  }
+                }
+              }
+            }
+            .bottom {
+              .text01 {
+                padding: 0 34px;
+                @include SP {
+                  padding: 0;
+                }
+                p {
+                  @include font-size(16);
+                  line-height: 2;
+                  font-weight: 300;
+                  @include SP {
+                    @include font-size(14);
+                    line-height: 1.785;
+                  }
+                }
+              }
+              .text-img01 {
+                @include display-flex();
+                @include justify-content(space-between);
+                @include SP {
+                  display: block;
+                }
+                .img {
+                  width: 34.28%;
+                  @include SP {
+                    width: 100%;
+                    height: 187px;
+                    margin: 0 0 20px;
+                  }
+                }
+                .text01 {
+                  width: 59.7%;
+                  padding: 0;
+                  @include SP {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .bottom01 {
+              background: url(../images/about/history/img03.png)bottom center/100% auto no-repeat;
+              margin: 46px 0 0;
+              padding: 0 0 175px;
+              @include SP {
+                margin: 18px 0 0;
+                padding: 0 0 0;
+                background: none;
+              }
+              .text01 {
+                margin: 0 0 40px;
+                @include SP {
+                  margin: 0 0 26px;
+                }
+              }
+              .text-img01 {
+                margin: 0 0 65px;
+                @include SP {
+                  margin: 0 0 24px;
+                }
+                .text01 {
+                  margin: 0;
+                }
+              }
+              .sp{
+                margin: 0 -16px;
+              }
+            }
+            .bottom02 {
+              margin: 74px 0 0;
+              @include SP {
+                margin: 20px 0 0;
+              }
+              .text-img01 {
+                @include SP {
+                  @include display-flex();
+                  @include flex-direction(column);
+                }
+                .img {
+                  @include SP {
+                    order: 2;
+                    width: calc(100% + 32px);
+                    margin: 24px -16px 0;
+                    height: 230px;
+                  }
+                }
+                .text {
+                  @include SP {
+                    order: 1;
+                  }
+                }
+              }
+              .ipad{
+                @media only screen and (max-width: 998px){
+                  @include PC{
+                    display: none !important;
+                  }
+                  @include SP{
+                    display: none !important;
+                  }
+                }
+              }
+            }
+            .bottom03 {
+              margin: 74px 0 0;
+              @include SP {
+                margin: 20px 0 0;
+              }
+              .text-img01 {
+                @include SP {
+                  @include display-flex();
+                  @include flex-direction(column);
+                }
+                .img {
+                  @include SP {
+                    order: 2;
+                    width: calc(100% + 32px);
+                    margin: 32px -16px 0;
+                    height: 230px;
+                  }
+                }
+                .text {
+                  @include SP {
+                    order: 1;
+                  }
+                }
+              }
+            }
+            .img03 {
+              margin: 20px 0 0;
+            }
+          }
+          .last {
+            position: relative;
+            &:before {
+              content: "";
+              width: 1px;
+              height: 0;
+              display: block;
+              background: #fff;
+              position: absolute;
+              top: 0;
+              left: -108px;
+            }
+          }
+        }
+
+        .catch {
+          border-top: 1px solid #3E3E3D;
+          border-bottom: 1px solid #3E3E3D;
+          height: 181px;
+          @include display-flex();
+          @include justify-content(center);
+          @include align-items(center);
+          margin: 98px 0 20px;
+          @include SP {
+            margin: -9px 0 0;
+            height: 127px;
+          }
+          p {
+            text-align: center;
+            @include font-size(22);
+            line-height: 1.818;
+            font-family: $noto2;
+            font-weight: 500;
+            @include SP {
+              line-height: 1.4;
+            }
+          }
+        }
+
+      }
+
+
+
+
+    }
+    .onlineshop {
+      @include SP {
+        padding-top: 60px;
+      }
+    }
+}

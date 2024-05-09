@@ -1,0 +1,552 @@
+body.sangenton {
+    main {
+      .section01{
+        .brand01{
+          display: block;
+          margin-bottom: 20px;
+          margin-right: 12px;
+        }
+        .brand01-sp{
+          width: 45%;
+          margin-right: 5px;
+
+        }
+        .brand02{
+          display: block;
+          margin-right: 12px;
+        }
+        .brand02-sp{
+          width: 45%;
+          margin: 0;
+        }
+        .img01{
+          display: block;
+          width:79.1%;
+          margin-left: 12px;
+        }
+        .img01-sp{
+          margin: 54px 0 23px;
+        }
+      }
+
+      .brand-img {
+        @include display-flex();
+        @include justify-content(space-between);
+        margin: 18px 0 60px;
+        @include SP {
+          @include flex-direction(column);
+          margin: 0 0 16px;
+        }
+        &__brand {
+          width: 20.6%;
+          @include SP {
+            width: 100%;
+            order: 2;
+            @include display-flex();
+            @include justify-content(center);
+            margin: 30px 0 0px;
+          }
+          .logo {
+            @include SP {
+              width: 141.8px;
+              // margin: 0 12px;
+            }
+            &:first-of-type {
+              margin: 0 0 29px;
+              @include SP {
+                margin: 0 9.3px;
+              }
+            }
+          }
+        }
+        &__img {
+          width: 77.26%;
+          box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+          @include SP {
+            width: calc(100% + 32px);
+            margin: 55px -16px 0;
+            height: 185px;
+            order: 1;
+          }
+        }
+      }
+
+      .section02{
+        .inner{
+          text-align: center;
+          img{
+              margin: 62px 0 21px;
+              @include SP {
+                margin-top: 26px;
+              }
+          }
+            h2{
+              @include font-size(24);
+              font-weight: bold;
+              font-family: $noto2;
+              color: #3E3E3D;
+              line-height: 2;
+              position: relative;
+              @include SP{
+                @include font-size(18);
+                line-height: 1.722222222;
+                margin: 16.2px 0;
+              }
+              &:after{
+                content:"";
+                display:block;
+                width:16.5%;
+                height:1px;
+                background-color:#2E5C3D;
+                position:absolute;
+                bottom: -32%;
+                left: 42%;
+                @include SP{
+                  width:34.3%;
+                  bottom: -27%;
+                  left: 31%;
+                }
+             }
+            }
+            p{
+              margin-top: 98px;
+              @include font-size(18);
+              font-family: $noto2;
+              color: #3E3E3D;
+              line-height: 2;
+              font-weight: 600;
+              @include SP{
+                @include font-size(16);
+                text-align: left;
+                margin: 65px 0 30px;
+              }
+            }
+        }
+      }
+      .section03{
+        .img02{
+          margin-top: 62px;
+        }
+        .img02-sp{
+          margin-top: 34px;
+        }
+        .img03{
+          width:46%;
+          display:block;
+          margin-right: 40px;
+        }
+        .img04-sp{
+          margin-top: 41px;
+          width: 100%;
+        }
+        .text-img {
+            margin-top: 64px;
+            @include display-flex();
+            @include justify-content(space-between);
+            @include SP {
+              @include flex-direction(column);
+              margin-top: 0;
+              display: block;
+            }
+            .img {
+              width: 46%;
+              // margin-top: 3%;
+              @include SP {
+                width: calc(100% + 32px);
+                margin: 0 -16px;
+                order: 1;
+              }
+            }
+            .text {
+              width: 50%;
+              @include SP {
+                width: 100%;
+                order: 2;
+                margin: 15px 0 0;
+                text-align: right;
+              }
+              .text-space{
+                margin-top: 40px
+              }
+
+              h2{
+                @include font-size(24);
+                font-weight: bold;
+                font-family: $noto2;
+                position: relative;
+
+                &:after{
+                  content:"";
+                  display:block;
+                  width:100%;
+                  height:1px;
+                  background-color:#707070;
+                  position:absolute;
+                  bottom: -80%;
+                  left: 0%;
+                  @include SP {
+                    bottom: -100%;
+                  }
+                }
+                @include SP {
+                  @include font-size(20);
+                  text-align: left;
+                  margin-top: 30px;
+                  // padding-bottom: 20.2px;
+                }
+              }
+              p{
+                @include font-size(16);
+                font-family: $noto;
+                margin-top: 57px;
+                line-height: 2;
+                @include SP{
+                  @include font-size(14);
+                  line-height: 1.785714286;
+                  text-align: left;
+                  margin:20.8px 0 49.7px;
+
+                }
+              }
+            }
+          }
+
+          &__letters{
+            display:flex;
+            margin-top: 103px;
+            @include SP{
+              display: block;
+              margin-top: 33px;
+            }
+              h2{
+                @include font-size(24);
+                font-weight: bold;
+                font-family: $noto2;
+                position: relative;
+                &:after{
+                  content:"";
+                  display:block;
+                  width:100%;
+                  height:1px;
+                  background-color:#707070;
+                  position:absolute;
+                  bottom: -80%;
+                  left: 0%;
+                }
+                @include SP {
+                  @include font-size(20);
+                }
+              }
+              p{
+                @include font-size(16);
+                font-family: $noto;
+                margin-top: 40px;
+                line-height: 2;
+                @include SP{
+                  @include font-size(14);
+                  line-height: 1.785714286;
+                }
+              }
+          }
+      }
+
+      .section06{
+        .box {
+            padding: 104px 0 90px;
+            @include SP {
+              padding: 0 0 0;
+              border: none;
+              margin: 0 0 34px;
+            }
+            h4 {
+              @include font-size(24);
+              font-family: $noto2;
+              font-weight: 700;
+              line-height: 1.44;
+              margin: 0 0 32px;
+              position:relative;
+              @include SP {
+                @include font-size(20);
+                line-height: 1.45;
+                font-weight: 500;
+                // text-align: center;
+                margin: 0px 0 53.5px;
+              }
+              &:after{
+                content:"";
+                display:block;
+                width:53%;
+                height:1px;
+                background-color:#707070;
+                position:absolute;
+                bottom: -40%;
+                left: 0%;
+                @include SP {
+                    width:100%;
+                    bottom: -55%;
+                }
+              }
+            }
+            .text-img {
+              @include display-flex();
+              @include justify-content(space-between);
+              @include SP {
+                @include flex-direction(column);
+                align-items: center;
+              }
+              .img {
+                width: 40.9%;
+                margin-top: 49.1px;
+                @include SP {
+                  width: 80%;
+                  margin-top: 0;
+                  order: 1;
+                }
+              }
+              .text {
+                width: 54.8%;
+                @include SP {
+                  width: 100%;
+                  order: 2;
+                  // margin: 15px 0 0;
+                  text-align: right;
+                }
+                p {
+                  @include font-size(16);
+                  line-height: 2;
+                  font-weight: 300;
+                  margin-top: 49.1px;
+                  font-family: $noto;
+                  @include SP {
+                    @include font-size(14);
+                    line-height: 1.785;
+                    text-align: left;
+                    margin-top: 33.9px;
+                  }
+                }
+                .more {
+                  margin: 45px 0 0;
+                }
+              }
+            }
+          }
+      }
+    .section07{
+      padding-bottom: 30px;
+      @include SP {
+        padding-bottom: 0;
+      }
+      .read {
+        height: 365px;
+        background: url(../images/about/brand/sangenton/img06.jpg)center center/cover no-repeat;
+        margin: 65px 0 0;
+        @include SP {
+        margin: 46px 0 0;
+          height: 200px;
+          background: url(../images/about/brand/sangenton/img06-sp.jpg)center center/cover no-repeat;
+        }
+        .inner {
+          height: 100%;
+          @include display-flex();
+          @include align-items(center);
+          @include justify-content(center);
+        }
+        p {
+          @include font-size(35);
+          letter-spacing: 0.075em;
+          line-height: 1.171428571;
+          color: #fff;
+          font-family: $noto2;
+          font-weight: 500;
+          text-align: center;
+          @include SP {
+            @include font-size(22);
+            line-height: 0.5;
+          }
+        }
+      }
+      button{
+        margin: 84px auto 0;
+        display: block;
+        @include font-size(24);
+        font-weight: bold;
+        font-family: $noto;
+        padding: 15px 70px;
+        border-radius: 36px;
+        border: none;
+        background-color: #f2f0ee;
+        @include SP {
+          @include font-size(16);
+          margin: 58px auto 0;
+        }
+      }
+      .link{
+        margin: 130px auto 46px;
+        @include SP {
+            @include font-size(16);
+            margin: 40px auto 0;
+          }
+     }
+    }
+    .section08{
+      max-width: 1200px;
+      padding: 0 100px;
+      margin: 0 auto;
+      @include SP {
+        background: url(../images/about/brand/sangenton/bg.jpg);
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .inner{
+        background: url(../images/about/brand/sangenton/bg.jpg);
+        display:flex;
+        padding: 19px 35px 24px;
+        position: relative;
+        @include SP{
+          background-color: #fff;
+          display: block;
+          padding: 24px 0;
+        }
+        .bg-img{
+          background-color: #fff;
+          @include SP {
+            position: relative;
+            z-index: +1;
+          }
+        }
+        img{
+          width:108px;
+          position: absolute;
+          bottom: 15%;
+          left: 5.5%;
+          // padding-bottom: 12px;
+          @include SP {
+            width: 75px;
+            position: absolute;
+            bottom: auto;
+            top: 15px;
+            left: 15%;
+            padding-bottom: 0;
+          }
+        }
+        span{
+          @include font-size(16);
+          font-weight: bold;
+          font-family: $noto2;
+          line-height: 1.5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+          width: 336px;
+          // height: 83px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 100px;
+          @include SP {
+            width:100%;
+            @include font-size(16);
+            padding-top: 27px;
+            padding-left: 16%;
+            padding-bottom: 0
+          }
+
+        }
+        h2{
+          @include font-size(32);
+          font-weight: bold;
+          font-family: $noto;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          background-color: #fff;
+          width: calc(100% - 290px);
+          position: relative;
+          padding-left: 7%;
+          @include SP {
+            @include font-size(25);
+            text-align: center;
+            padding: 0;
+            display:block;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            padding-bottom: 24px;
+            padding-top: 33px;
+            &:before{
+              content:"";
+              display:block;
+              width:70%;
+              height:1px;
+              background-color:#707070;
+              position:absolute;
+              bottom: 160%;
+              left: 11%;
+              @include SP {
+                width: 67%;
+                left: 17%;
+                bottom: 84%;
+              }
+           }
+          }
+          @include PC{
+            &:after{
+              content: "";
+              display: block;
+              height: 1px;
+              background: #707070;
+              width: 1px;
+              height: 75%;
+              overflow: hidden;
+              position: absolute;
+              left: 2%;
+              top: 13%;
+            }
+          }
+        }
+      }
+      .inner01{
+        background: url(../images/about/brand/sangenton/bg.jpg);
+        max-width: 1200px;
+        padding: 0 35px;
+        margin: 0 auto;
+        @include SP{
+          padding: 0;
+        }
+        p{
+          @include font-size(16);
+          font-family: $noto;
+          line-height:2 ;
+          padding-bottom: 40px;
+          @include SP {
+            padding: 0 0 15px;
+          }
+        }
+      }
+    }
+  }
+  .wide-ban{
+    background-image: url(../images/about/brand/sangenton/img06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 365px;
+    width: 100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $serif;
+    @include font-size(35);
+    @include letter-spacing(75);
+    line-height: 1em;
+    margin: 65px 0 84.6px;
+    @include SP{
+      height: 200px;
+      background-image: url(../images/about/brand/sangenton/img06-sp.jpg);
+      @include font-size(22);
+      margin: 49px 0
+    };
+  }
+}

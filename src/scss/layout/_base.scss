@@ -1,0 +1,94 @@
+// fonts
+// ---------------------------------------------------------------------------
+// @font-face {
+// 	font-family: 'フォント名';
+// 	src: url('フォント名.eot');
+// 	src: url('フォント名.eot?iefix') format('eot'),
+// 		url('フォント名.woff') format('woff'),
+// 		url('フォント名.ttf') format('truetype'),
+// 		url('フォント名.svg#webfontjSpbZQRv') format('svg');
+// }
+
+
+// var
+// ---------------------------------------------------------------------------
+$gothic: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$serif: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",'Noto Serif JP', serif;
+
+$noto: 'Noto Sans JP', sans-serif;
+$noto2: 'Noto Serif JP', serif;
+$vollkorn: 'Vollkorn', serif;
+$roboto: 'Roboto', sans-serif;
+$barlow: 'Barlow', sans-serif;
+
+$green:#2E5C3D;
+$gray:#f2f0ee;
+$dark:#4D4D4D;
+$brown:#804A1B;
+
+// breakpoints
+// ---------------------------------------------------------------------------
+@mixin PC {
+  @include min-screen(768px) {
+    @content;
+  }
+}
+@mixin SP {
+  @include max-screen(767px) {
+    @content;
+  }
+}
+.pc {
+  @include SP {
+    display: none !important;
+  }
+}
+.sp {
+  @include PC {
+    display: none !important;
+  }
+}
+
+
+// base
+// ---------------------------------------------------------------------------
+html {
+	font-size: 62.5%;
+	font-family: $noto;
+  color: #3E3E3D;
+}
+*{
+	@include font-size(14);
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+  backface-visibility: hidden;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+  transition: .3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.wrap {
+  padding-top: 80px;
+  @include SP {
+    padding-top: 64px;
+  }
+}
+.inner {
+  max-width: 1200px;
+  padding: 0 100px;
+  margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    padding: 0 30px;
+  }
+  @include SP {
+    padding: 0 16px;
+  }
+}

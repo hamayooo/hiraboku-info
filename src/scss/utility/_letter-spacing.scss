@@ -1,0 +1,8 @@
+// illustrator & photoshop letter spacing
+// ---------------------------------------------------------------------------
+@function letter-spacing( $letter-spacing ){
+	@return ($letter-spacing/ 1000) * 1em;
+}
+@mixin letter-spacing( $target ){
+  letter-spacing: letter-spacing( $target );
+}

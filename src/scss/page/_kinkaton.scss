@@ -1,0 +1,634 @@
+body.kinkaton {
+    main {
+      .section01{
+        .brand01{
+          display: block;
+          margin-bottom: 20px;
+          margin-right: 12px;
+        }
+        .brand01-sp{
+          width: 45%;
+          margin-right: 5px;
+
+        }
+        .brand02{
+          display: block;
+          margin-right: 12px;
+        }
+        .brand02-sp{
+          width: 45%;
+          margin: 0;
+        }
+        .img01{
+          display: block;
+          width:79.1%;
+          margin-left: 12px;
+        }
+        .img01-sp{
+          margin: 54px 0 23px;
+        } 
+      }
+
+      .brand-img {
+        @include display-flex();
+        @include justify-content(space-between);
+        margin: 18px 0 45px;
+        @include SP {
+          @include flex-direction(column);
+          margin: 54px 0 24px;
+        }
+        &__brand {
+          width: 19.8%;
+          @include SP {
+            width: 100%;
+            order: 2;
+            @include display-flex();
+            @include justify-content(center);
+            margin: 23px 0 0px;
+          }
+          .logo {
+            @include SP {
+              width: 146px;
+              margin: 0 5px;
+            }
+            &:first-of-type {
+              margin: 0 0 29px;
+              @include SP {
+                margin: 0px 5px;
+              }
+            }
+          }
+        }
+        &__img {
+          width: 77.9%;
+          box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+          @include SP {
+            width: calc(100% + 32px);
+            margin: 0 -16px;
+            height: 185px;
+            order: 1;
+          }
+        }
+      }
+
+      .section02{
+        .inner{
+          text-align: center;
+          img{
+              margin-top: 62px;
+          }
+            h2{
+              @include font-size(24);
+              font-weight: bold;
+              font-family: $noto2;
+              color: #3E3E3D;
+              line-height: 2;
+              position: relative;
+              @include SP{
+                @include font-size(18);
+                line-height: 1.722222222;
+                margin: 16.2px 0;
+              }
+              &:after{
+                content:"";
+                display:block;
+                width:16.5%;
+                height:1px;
+                background-color:#B1905D;
+                position:absolute;
+                bottom: -32%;
+                left: 42%;
+                @include SP{
+                  width:34.3%;
+                  bottom: -27%;
+                  left: 31%;
+                }
+             }
+            }
+            p{
+              margin-top: 98px;
+              @include font-size(18);
+              font-family: $noto2;
+              color: #3E3E3D;
+              line-height: 2;
+              @include SP{
+                @include font-size(16);
+                text-align: left;
+                margin: 65px 0 31px;
+              }
+            }
+        }
+      }
+      .section03{
+       
+        .img02{
+          margin-top: 62px;
+        }
+        .img02-sp{
+          margin-top: 34px;
+        }
+        .img03{
+          width:46%;
+          display:block;
+          margin-right: 40px;
+        }
+        .img03-sp{
+          margin-top: 23px;
+          width: 100%;
+        }
+        .text-img {
+            margin-top: 101px;
+            @include display-flex();
+            @include justify-content(space-between);
+            @include SP {
+              @include flex-direction(column);
+              margin-top: 36px;
+            }
+            .img {
+              width: 46%;
+              margin-top: 15px;
+              @include SP {
+                width: calc(100% + 32px);
+                margin: 0 -16px;
+                order: 1;
+              }
+            }
+            .text {
+              width: 50%;
+              @include SP {
+                width: 100%;
+                order: 2;
+                text-align: right;
+              }
+
+              h2{
+                @include font-size(24);
+                font-weight: bold;
+                font-family: $noto2;
+                position: relative;
+                
+                &:after{
+                  content:"";
+                  display:block;
+                  width:100%;
+                  height:1px;
+                  background-color:#707070;
+                  position:absolute;
+                  bottom: -80%;
+                  left: 0%;
+                  @include SP {
+                    bottom: -95%;
+                  }
+                }
+                @include SP {
+                  @include font-size(20);
+                  text-align: left;
+                }
+              }
+              p{
+                @include font-size(16);
+                font-family: $noto;
+                margin-top: 40px;
+                line-height: 2;
+                @include SP{
+                  @include font-size(14);
+                  line-height: 1.785714286;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        
+          &__letters{
+            display:flex;
+            margin-top: 103px;
+            @include SP{
+              display: block;
+              margin-top: 33px;
+            }
+
+           
+
+              h2{
+                @include font-size(24);
+                font-weight: bold;
+                font-family: $noto2;
+                position: relative;
+                &:after{
+                  content:"";
+                  display:block;
+                  width:100%;
+                  height:1px;
+                  background-color:#707070;
+                  position:absolute;
+                  bottom: -80%;
+                  left: 0%;
+                }
+                @include SP {
+                  @include font-size(20);
+                }
+              }
+              p{
+                @include font-size(16);
+                font-family: $noto2;
+                margin-top: 40px;
+                line-height: 2;
+                @include SP{
+                  @include font-size(14);
+                  line-height: 1.785714286;
+                }
+              }
+          }
+      }
+      .section04{
+        margin-top: 92px;
+        @include SP {
+            margin-top: 23px;
+        }
+        .cont{
+          padding: 51.8px 40px;
+          @include SP{
+            padding: 21.8px 15px;
+          }
+        }
+        .read{
+            background: url(../images/about/brand/kinkaton/bg02.jpg)center center/cover no-repeat;
+            background-color: rgba(255, 255, 255, 0.35);
+            background-blend-mode:lighten;
+            position:relative;
+            @include SP{
+                background: url(../images/about/brand/kinkaton/bg02-sp.jpg)center center/cover no-repeat;
+                background-color: rgba(255, 255, 255, 0.35);
+                background-blend-mode:lighten;
+            }
+        }
+        .img{
+            
+            height:649.61px;
+            @include SP{
+            }
+        }
+
+        .inner01{
+          padding: 54.2px 0;
+            background-color:#fff;
+            background-position: center;
+            margin: auto;
+            @include SP {
+                padding: 25px 15px 32.8px 15px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+              .brand02{
+                width: get_vw(198);
+                height: auto;
+                margin-right:get_vw(33.5);
+                @include SP {
+                    width:35.2769679%;
+                }
+
+              }
+              h2{
+                color: #B1905D;
+                font-weight: bold;
+                font-family: $noto2;
+                position: relative;
+                &:after{
+                  content:"";
+                  display:block;
+                  width:100%;
+                  height:2px;
+                  background-color:#B1905D;
+                  position:absolute;
+                  bottom: -5%;
+                  left: 0%;
+                  @include SP {
+                      width:86%;
+                      bottom: -15%;
+                      left: 7%;
+                  }
+                }
+                .title{
+                  margin-top: 2%;
+                  font-size: get_vw(32);
+                  text-align-last: justify;
+                  display: block;
+                  @include SP {
+                      text-align: center;
+                      @include font-size(16);
+                      margin-top: 15.8px;
+                      text-align-last: center;
+                  }
+                }
+                p{
+                  font-size: get_vw(52);
+                  line-height: 1.433333333;
+                  text-align: left;
+                  text-align-last: justify;
+                  @include SP{
+                      @include font-size(28);
+                      text-align-last: center;
+                  }
+                  span{
+                    font-size: get_vw(60);
+                    @include SP{
+                      @include font-size(28);
+                    }
+                  }
+                }
+              }
+              &__flex{
+                display:flex;
+                justify-content: center;
+                margin-bottom: 27px;
+                @include SP{
+                    display:block;
+                    text-align: center;
+                    
+                }
+              }
+              &__letter{
+                display:block;
+                line-height: 1.75;
+                @include font-size(16);
+                width: 65%;
+                margin: 3% auto 0;
+                text-align: left;
+                font-weight: normal;
+                @include SP {
+                    @include font-size(14);
+                    width: 100%;
+                }
+                span{
+                  @include font-size(14);
+                  color: #3E3E3D;
+                  font-weight: normal;
+                  font-family: $noto;
+                  @include SP{
+                    @include font-size(12);
+                  }
+                }
+              }
+            }
+            p {
+              text-align: center;
+              span{
+                color: #B1905D;
+                text-align: center;
+                margin:0 auto;
+                font-family: $noto2;
+                font-weight: bold;
+                letter-spacing: 0.075em;
+                line-height: 1.766666667;
+                font-size: get_vw(30);
+                @include SP{
+                    @include font-size(18);
+                }
+                  span{
+                    font-size: get_vw(20);
+                    display: inline;
+                    @include SP {
+                        @include font-size(14);
+                    }
+                  }
+                 
+              }
+            }
+        }
+
+    .section05{
+        .box {
+            padding: 80.2px 0 0;
+            @include SP {
+              padding: 0 0 0;
+              border: none;
+              margin: 0 0 59.3px;
+            }
+            h4 {
+              @include font-size(24);
+              font-family: $noto2;
+              font-weight: 700;
+              line-height: 1.44;
+              margin: 0 0 32px;
+              position:relative;
+              @include SP {
+                @include font-size(20);
+                line-height: 1.45;
+                font-weight: 500;
+                // text-align: center;
+                margin: 26.3px 0 41.9px;
+              }
+              &:after{
+                content:"";
+                display:block;
+                width:100%;
+                height:1px;
+                background-color:#707070;
+                position:absolute;
+                bottom: -40%;
+                left: 0%;
+                @include SP {
+                    width:100%;
+                    bottom: -70%;
+                    // left: 7%;
+                }
+              }
+            }
+            .text-img {
+              @include display-flex();
+              @include justify-content(space-between);
+              @include SP {
+                @include flex-direction(column);
+              }
+              .img {
+                width: 40.9%;
+                @include SP {
+                  width: calc(100% + 32px);
+                  margin: 0 -16px;
+                  order: 1;
+                }
+              }
+              .text {
+                width: 54.8%;
+                @include SP {
+                  width: 100%;
+                  order: 2;
+                  margin: 20px 0 0;
+                  text-align: right;
+                }
+                p {
+                  @include font-size(16);
+                  line-height: 2;
+                  font-weight: 300;
+                  margin-top: 56px;
+                  @include SP {
+                    @include font-size(14);
+                    line-height: 1.785;
+                    text-align: left;
+                    margin-top: 0;
+                  }
+                }
+                .more {
+                  margin: 45px 0 0;
+                }
+              }
+            }
+          }
+    }
+
+    .section06{
+        .box {
+            padding: 80px 0 77px;
+            @include SP {
+              padding: 0 0 0;
+              border: none;
+              margin: 0 0 52px;
+            }
+            h4 {
+              @include font-size(24);
+              font-family: $noto2;
+              font-weight: 700;
+              line-height: 1.44;
+              margin: 0 ;
+              position:relative;
+              @include SP {
+                @include font-size(20);
+                line-height: 1.45;
+                font-weight: 500;
+              }
+              &:after{
+                content:"";
+                display:block;
+                width: 53%;
+                height:1px;
+                background-color:#707070;
+                position:absolute;
+                bottom: -40%;
+                left: 0%;
+                @include SP {
+                    width:100%;
+                    bottom: -55%;
+                }
+              }
+            }
+            .text-img {
+              @include display-flex();
+              @include justify-content(space-between);
+              @include SP {
+                @include flex-direction(column);
+                align-items: center;
+              }
+              .img {
+                width: 40.9%;
+                margin-top: 81px;
+                @include SP {
+                  width: 80%;
+                  margin-top: 53.5px;
+                  order: 1;
+                }
+              }
+              .text {
+                width: 54.8%;
+                @include SP {
+                  width: 100%;
+                  order: 2;
+                  text-align: right;
+                }
+                p {
+                  @include font-size(16);
+                  line-height: 2;
+                  font-weight: 300;
+                  margin-top: 81px;
+                  @include SP {
+                    @include font-size(14);
+                    line-height: 1.785;
+                    text-align: left;
+                    margin-top: 63.9px;
+                  }
+                }
+                .more {
+                  margin: 45px 0 0;
+                }
+              }
+            }
+          }
+
+          .read {
+            height: 365px;
+            background: url(../images/about/brand/kinkaton/bg.jpg)center center/cover no-repeat;
+            @include SP {
+            margin: 46px 0 0;
+              height: 200px;
+              background: url(../images/about/brand/kinkaton/bg-sp.jpg)center center/cover no-repeat;
+            }
+            .inner {
+              height: 100%;
+              @include display-flex();
+              @include align-items(center);
+              @include justify-content(center);
+            }
+            p {
+              @include font-size(35);
+              letter-spacing: 0.075em;
+              line-height: 1.171428571;
+              color: #fff;
+              font-family: $noto2;
+              font-weight: 500;
+              text-align: center;
+              @include SP {
+                @include font-size(22);
+                line-height: 0.5;
+              }
+            }
+          }
+          button{
+            margin: 84px auto 0;
+            display: block;
+            @include font-size(24);
+            font-weight: bold;
+            font-family: $noto;
+            padding: 15px 70px;
+            border-radius: 36px;
+            border: none;
+            // background-color: #000000;
+            @include SP {
+              @include font-size(16);
+              margin: 59px auto 72px auto;
+            }
+          }
+          .link{
+            margin: 130px auto 46px;
+            @include SP {
+                @include font-size(16);
+                margin: 40px auto 0;
+              }
+         }
+      }
+    }
+    .wide-ban{
+      background-image: url(../images/about/brand/kinkaton/bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 365px;
+      width: 100%;
+      color:white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $serif;
+      @include font-size(35);
+      @include letter-spacing(75);
+      line-height: 1em;
+      margin-bottom: 84.6px;
+      @include SP{
+        height: 200px;
+        background-image: url(../images/about/brand/kinkaton/bg-sp.jpg);
+        @include font-size(22);
+        margin-bottom: 59.1px
+      };
+    }
+}

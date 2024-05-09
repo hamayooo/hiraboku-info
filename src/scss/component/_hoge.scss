@@ -1,0 +1,131 @@
+.more {
+  @include font-size(16);
+  font-weight: 700;
+  display: inline-block;
+  @include SP {
+    @include font-size(14);
+  }
+  &:after {
+    content: "";
+    width: 44px;
+    height: 7px;
+    display: inline-block;
+    margin-left: 5px;
+    background: url(../images/common/arrow_blk02.svg)center center/cover no-repeat;
+    @media all and (-ms-high-contrast: none) {
+      width:51px;
+      height:8px;
+    }
+  }
+}
+
+
+.mv-sub {
+  height: 217px;
+  background: url(../images/common/mv_sub.jpg)center center/cover no-repeat;
+  @include display-flex();
+  @include justify-content(center);
+  @include align-items(center)
+  h1 {
+    text-align: center;
+    strong {
+      display: block;
+      @include font-size(32);
+      font-weight: 700;
+      font-family: $noto2;
+      @include SP {
+        @include font-size(22);
+      }
+    }
+    small {
+      @include font-size(18);
+      letter-spacing: .075em;
+      font-family: $vollkorn;
+      display: block;
+      margin: 36px 0 0;
+      @include SP {
+        margin: 20px 0 0;
+      }
+    }
+    span {
+      @include font-size(24);
+      font-family: $noto2;
+      letter-spacing: .075em;
+      font-weight: 700;
+      line-height: 1.59;
+    }
+  }
+}
+
+#wide-visual{
+  margin-top: 32px;
+  @include SP{
+    margin-top: 56px;
+  };
+  figure{
+    height: 328px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include SP{
+      height: 49.333333vw;
+    };
+  }
+}
+
+
+.pankuzu {
+  margin: 10px 0 0;
+  .inner {
+    max-width: 1280px;
+    padding: 0 40px;
+    @include SP {
+      padding: 0 16px;
+    }
+  }
+  ul {
+    @include display-flex();
+    @include SP {
+      @include  flex-wrap(wrap);
+    }
+    li {
+      line-height: 1.6;
+      span {
+        @include font-size(13);
+        color: #808080;
+      }
+      &:after {
+        content: ">";
+        display: inline-block;
+        margin: 0 3px 0 0;
+      }
+      &:last-of-type {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+
+.page-back{
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 442px;
+  margin:0 auto;
+  @include font-size(24);
+  @include letter-spacing(0);
+  line-height:1.2em;
+  font-weight: bold;
+  border-radius: 32px;
+  -webkit-appearance:none;
+  @include SP{
+    width: 310px;
+    height: 44px;
+    @include font-size(16);
+  };
+}

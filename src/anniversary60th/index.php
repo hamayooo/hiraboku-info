@@ -64,12 +64,12 @@ include $path . 'libs/meta.php';
 		<section class="history" id="history">
 			<div class="inner">
 				<h2 class="anniv-title">HISTORY</h2>
-				<p class="anniv-lead">平田牧場60年の歴史を年代ごとにご紹介いたします</p>
+				<p class="anniv-lead">平田牧場60年の歴史を<br class="sp">年代ごとにご紹介いたします</p>
 				<dl class="history__list">
 					<dt><img src="../images/anniversary60th/history_year01.svg" alt="1964年"></dt>
 					<dd>
 						<div class="history__list__text">
-							<h3>すべては、たった2頭の豚からはじまった</h3>
+							<h3>すべては、<br class="sp">たった2頭の豚からはじまった</h3>
 							<p>
 								1953年、山形県庄内地方の旧平田町で、地元の青年たちが養豚業をはじめました。<br>
 								その中のひとりが、平田牧場の創業者・新田嘉一。新田の実家は代々米づくりをしてきた農家でした。しかし、新田は農家を継がず、周囲の反対を押し切り養豚業の世界へと飛び込んだのです。<br>
@@ -214,7 +214,7 @@ include $path . 'libs/meta.php';
 					</li>
 				</ul>
 				<p class="items__btn">
-					<a href="">
+					<a href="https://www.hiraboku.info/shop/">
 						<span class="items__btn__inner">
 							<strong>STORE LIST</strong>
 							<span>平田牧場60周年を記念した特別商品を<br>ご購入いただける取扱店の一覧はこちらから</span>

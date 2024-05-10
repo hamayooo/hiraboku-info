@@ -5,7 +5,7 @@ $(function () {
 	var currentScroll;
 	$('.gnav-toggle').click(function () {
 		$(this).toggleClass('is-active');
-		$('.gnav').toggleClass("is-active");
+		$('.gnav,.anniv-gnav').toggleClass("is-active");
 		if ($('.gnav-toggle').hasClass('is-active')) {
 			currentScroll = $(window).scrollTop();
 			$('.wrap').css({

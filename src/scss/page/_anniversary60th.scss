@@ -5,7 +5,33 @@ body.anniversary60th {
       width: calc(424px * 0.6);
       transition: none;
     }
+    @include SP {
+      height: 100px;
+      .header__logo {
+        width: 272px;
+      }
+    }
     .anniv-gnav {
+      @include SP {
+        background-color: rgba(#fff,.9);
+        display: block;
+        height: calc(100% - 100px);
+        overflow-y: scroll;
+        opacity: 0;
+        padding: 16px 16px 0;
+        pointer-events: none;
+        visibility: hidden;
+        width: 100%;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        transition: 0.3s;
+        &.is-active {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+      }
       ul {
         color: #2A4F2C;
         display: flex;
@@ -16,8 +42,10 @@ body.anniversary60th {
           @include font-size(12);
         }
         @include SP {
+          @include font-size(16);
           flex-direction: column;
-          gap: 50px 0;
+          gap: 40px 0;
+          padding: 50px 16px 0;
         }
         li {
           &.is-blank {
@@ -41,14 +69,22 @@ body.anniversary60th {
         @include SP {
           display: flex;
           flex-direction: column;
-          gap: 24px 0;
-          margin-top: 50px;
+          gap: 18px 0;
+          margin-top: 40px;
+          padding-bottom: 40px;
+          padding-top: 0;
+          li img {
+            width: 40px;
+          }
         }
       }
     }
   }
   .wrap {
     padding-top: 120px;
+    @include SP {
+      padding-top: 100px;
+    }
   }
   main {
     .anniv-title {
@@ -56,10 +92,12 @@ body.anniversary60th {
       font-family: $serif;
       font-weight: 700;
       letter-spacing: 0.1em;
-      @include font-size(40);
+      @include font-size(36);
       margin-bottom: 45px;
       text-align: center;
       @include SP {
+        margin-bottom: 12px;
+        line-height: calc(50 / 36);
       }
     }
     .anniv-lead {
@@ -70,6 +108,9 @@ body.anniversary60th {
       margin-bottom: 45px;
       text-align: center;
       @include SP {
+        @include font-size(20);
+        line-height: calc(35 / 20);
+        margin-bottom: 28px;
       }
     }
     .lead {
@@ -94,11 +135,27 @@ body.anniversary60th {
           }
         }
       }
+      @include SP {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        h2 {
+          img {
+            max-width: 270px;
+          }
+        }
+        .lead__text {
+          @include font-size(15);
+          padding-top: 60px;
+        }
+      }
     }
     .history {
       background-color: #E5E5E5;
       padding-bottom: 60px;
       padding-top: 60px;
+      @include SP {
+        overflow: hidden;
+      }
       .history__list {
         display: flex;
         flex-wrap: wrap;
@@ -115,6 +172,15 @@ body.anniversary60th {
           top: 0;
           z-index: -1;
         }
+        @include SP {
+          display: block;
+          margin-top: 30px;
+          &::before {
+            height: calc(100% - 10px);
+            width: 1px;
+            left: 14px;
+          }
+        }
         dt {
           width: 120px;
           position: relative;
@@ -129,6 +195,15 @@ body.anniversary60th {
               left: 0;
               top: 0;
               z-index: -1;
+            }
+          }
+          @include SP {
+            padding-left: 0;
+            width: 100px;
+            &:nth-last-child(2) {
+              &::before {
+                content: none;
+              }
             }
           }
         }
@@ -153,6 +228,36 @@ body.anniversary60th {
           &.is-box08 {
             margin-bottom: calc(100px * 0.6);
           }
+          @include SP {
+            display: block;
+            margin-bottom: 40px;
+            min-height: 0;
+            padding-left: 32px;
+            padding-top: 12px;
+            width: auto;
+            &.is-no-minheight {
+              margin-bottom: 40px;
+            }
+            &.is-box07 {
+              margin-top: 0;
+            }
+            &.is-box08 {
+              margin-bottom: 0;
+            }
+            &:last-child {
+              position: relative;
+              &::before {
+                background-color: #E5E5E5;
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+              }
+            }
+          }
         }
         .history__list__text {
           width: 48.5%;
@@ -165,6 +270,13 @@ body.anniversary60th {
           }
           p {
             line-height: 2;
+          }
+          @include SP {
+            width: auto;
+            h3 {
+              @include font-size(15);
+              line-height: calc(25 / 15);
+            }
           }
         }
         .history__list__img {
@@ -251,12 +363,103 @@ body.anniversary60th {
               max-width: calc(435px * 0.6);
             }
           }
+          @include SP {
+            margin-top: 40px;
+            width: auto;
+            &.is-img01 {
+              margin-bottom: -54px;
+              img {
+                &:nth-child(1) {
+                  max-width: 100%;
+                }
+                &:nth-child(2) {
+                  margin-left: auto;
+                  margin-top: 20px;
+                  max-width: calc(244 / 393 * 100vw);
+                  transform: translateX(16px);
+                }
+              }
+            }
+            &.is-img02 {
+              img {
+                &:nth-child(1) {
+                  margin-left: calc(90 / 393 * 100vw);
+                  margin-top: calc((-12 / 393 * 100vw) - 40px);
+                  max-width: calc(195 / 393 * 100vw);
+                }
+                &:nth-child(2) {
+                  margin-left: 0;
+                  margin-top: 20px;
+                  max-width: 100%;
+                }
+              }
+            }
+            &.is-img03 {
+              img {
+                margin-top: 0;
+                max-width: calc(327 / 393 * 100vw);
+                transform: translateX(16px);
+              }
+            }
+            &.is-img04 {
+              img {
+                &:nth-child(1) {
+                  margin-left: 0;
+                  margin-top: 0;
+                  max-width: 100%;
+                }
+                &:nth-child(2) {
+                  margin-left: auto;
+                  margin-top: 20px;
+                  max-width: calc(313 / 393 * 100vw);
+                  transform: translateX(calc((24 / 393 * 100vw) + 16px));
+                }
+              }
+            }
+            &.is-img05 {
+              img {
+                &:nth-child(1) {
+                  margin-top: -40px;
+                  max-width: calc(310 / 393 * 100vw);
+                  transform: translateX(16px);
+                }
+                &:nth-child(2) {
+                  margin-top: 14px;
+                  max-width: 100%;
+                }
+              }
+            }
+            &.is-img06 {
+              img {
+                &:nth-child(1) {
+                  margin-left: 0;
+                  margin-top: -24px;
+                  max-width: 100%;
+                }
+                &:nth-child(2) {
+                  margin: 28px auto 0;
+                  max-width: calc(184 / 393 * 100vw);
+                }
+              }
+            }
+            &.is-img07 {
+              img {
+                margin-left: 0;
+                margin-top: 0;
+                max-width: 100%;
+              }
+            }
+          }
         }
       }
     }
     .items {
       padding-bottom: 120px;
       padding-top: 120px;
+      @include SP {
+        padding-bottom: 60px;
+        padding-top: 60px;
+      }
       .items__list {
         color: #2A4F2C;
         display: flex;
@@ -268,6 +471,18 @@ body.anniversary60th {
             @include font-size(12);
             line-height: 1.2;
             margin-top: calc(24px * 0.6);
+          }
+        }
+        @include SP {
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: calc(30 / 393 * 100vw) calc(20 / 393 * 100vw);
+          margin: 28px auto 45px;
+          max-width: 100%;
+          li {
+            p {
+              margin-top: 10px;
+            }
           }
         }
       }
@@ -312,6 +527,26 @@ body.anniversary60th {
             margin-top: 12px;
           }
         }
+        @include SP {
+          padding-right: 12px;
+          width: calc(325 / 393 * 100vw);
+          a {
+            .items__btn__inner {
+              padding: 16px 0;
+            }
+            &::before {
+              left: 8px;
+              top: 8px;
+            }
+            strong {
+              @include font-size(30);
+            }
+            span {
+              @include font-size(12);
+              margin-top: 9px;
+            }
+          }
+        }
       }
     }
     .message {
@@ -322,6 +557,13 @@ body.anniversary60th {
       .anniv-title {
         color: #fff;
         margin-bottom: calc(80px * 0.6);
+      }
+      @include SP {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        .anniv-title {
+          margin-bottom: 32px;
+        }
       }
       .message__box {
         display: flex;
@@ -347,6 +589,31 @@ body.anniversary60th {
             }
           }
         }
+        @include SP {
+          display: block;
+          p {
+            @include font-size(15);
+          }
+          .message__box__text {
+            margin-bottom: 40px;
+            width: auto;
+          }
+          .message__box__img {
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 0 calc(16 / 393 * 100vw);
+            width: auto;
+            figcaption {
+              @include font-size(12);
+              line-height: 2;
+              margin-top: 0;
+              span {
+                @include font-size(15);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -354,6 +621,7 @@ body.anniversary60th {
     padding-bottom: 60px;
     padding-top: 60px;
     text-align: center;
+    position: relative;
     .footer-anniv__logo {
       display: inline-block;
       margin-bottom: 30px;
@@ -365,7 +633,7 @@ body.anniversary60th {
       justify-content: center;
       li {
         img {
-          width: 36px;
+          width: 40px;
         }
       }
     }
@@ -380,6 +648,31 @@ body.anniversary60th {
       }
       span {
         margin-top: 1em;
+      }
+    }
+    @include SP {
+      .footer-anniv__logo {
+        margin-bottom: 28px;
+        width: 206px;
+      }
+      .footer-anniv__sns {
+        gap: 0 28px;
+        li {
+          img {
+            width: 50px;
+          }
+        }
+      }
+      .footer-anniv__copyright {
+        margin-top: 56px;
+        span,
+        small {
+          @include font-size(12);
+          line-height: calc(25 / 12);
+        }
+        span {
+          margin-top: 1em;
+        }
       }
     }
   }

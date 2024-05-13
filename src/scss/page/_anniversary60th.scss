@@ -222,9 +222,7 @@ body.anniversary60th {
           &:last-child {
             min-height: 0;
           }
-          &.is-box07 {
-            margin-top: calc(-160px * 0.6);
-          }
+          &.is-box07,
           &.is-box08 {
             margin-bottom: calc(100px * 0.6);
           }
@@ -238,9 +236,7 @@ body.anniversary60th {
             &.is-no-minheight {
               margin-bottom: 40px;
             }
-            &.is-box07 {
-              margin-top: 0;
-            }
+            &.is-box07,
             &.is-box08 {
               margin-bottom: 0;
             }
@@ -351,6 +347,7 @@ body.anniversary60th {
                 max-width: calc(440px * 0.6);
               }
               &:nth-child(2) {
+                margin-bottom: calc(-240px * 0.6);
                 margin-top: calc(-20px * 0.6);
                 max-width: calc(280px * 0.6);
               }
@@ -359,7 +356,7 @@ body.anniversary60th {
           &.is-img07 {
             img {
               margin-left: auto;
-              margin-top: calc(40px * 0.6);
+              margin-top: calc(120px * 0.6);
               max-width: calc(435px * 0.6);
             }
           }

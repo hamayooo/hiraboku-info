@@ -15,7 +15,7 @@ switch ($pagename) {
 		if(!isset($seo_description)) $seo_description = '1964年の創業以来、私たちが歩んできた道のりや、企業情報などをご紹介いたします。日本で、いや、世界でいちばんの丁寧をめざそう。いのちに感謝する日本の食のDNAを受け継いで、いちばん丁寧にいのちと向き合うブランドになろう。これまでも、これからも。平田牧場の変わらない想いです。';
 		if(!isset($seo_keyword)) $seo_keyword = '';
 	break;
-  case 'aniversary60th':
+  case 'anniversary60th':
 		if(!isset($seo_title)) $seo_title = '平田牧場60周年記念 | 平田牧場について | 平田牧場公式サイト';
 		if(!isset($seo_description)) $seo_description = '平田牧場は1964年に創業し2024年に創業60周年を迎えました。「いのち」に丁寧に向き合い、効率を優先せず、きちんと手間をかけ、おいしくて安全・安心・健康な豚肉を皆様にお届けし、社会全体も健康にするよう、私たちは努力して参ります。';
 		if(!isset($seo_keyword)) $seo_keyword = '';

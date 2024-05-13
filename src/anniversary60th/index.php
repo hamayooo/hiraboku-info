@@ -1,7 +1,7 @@
 <?php
 $path = realpath(dirname(__FILE__) . '') . "/../";
 include_once $path . 'app_config.php';
-include $path . 'libs/meta.php';
+include $path . 'libs/meta_anniv.php';
 
 ?>
 </head>
@@ -214,7 +214,7 @@ include $path . 'libs/meta.php';
 					</li>
 				</ul>
 				<p class="items__btn">
-					<a href="https://www.hiraboku.info/shop/">
+					<a href="https://www.hiraboku.info/shop/" target="_blank" rel="noopener">
 						<span class="items__btn__inner">
 							<strong>STORE LIST</strong>
 							<span>平田牧場60周年を記念した特別商品を<br>ご購入いただける取扱店の一覧はこちらから</span>

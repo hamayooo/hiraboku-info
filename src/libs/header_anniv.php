@@ -4,7 +4,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header class="header">
-  <a href="<?php echo APP_URL;?>" class="header__logo">
+  <a href="https://www.hiraboku.info/anniversary60th/" class="header__logo">
     <img src="<?php echo APP_URL;?>images/common/logo_anniv.svg" alt="平田牧場創業60周年">
   </a>
   <nav class="anniv-gnav">

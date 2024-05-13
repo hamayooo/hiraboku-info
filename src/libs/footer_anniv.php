@@ -1,6 +1,6 @@
 <footer class="footer-anniv">
   <div class="inner">
-    <a href="<?php echo APP_URL;?>" class="footer-anniv__logo">
+    <a href="https://www.hiraboku.info/anniversary60th/" class="footer-anniv__logo">
       <img src="<?php echo APP_URL;?>images/common/logo_anniv_footer.svg" alt="平田牧場創業60周年">
     </a>
     <ul class="footer-anniv__sns">

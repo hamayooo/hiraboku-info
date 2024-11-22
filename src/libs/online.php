@@ -12,9 +12,6 @@
       <a href="https://www.rakuten.ne.jp/gold/hiraboku/" target="_blank" class="btn">
         <span>楽天市場店</span>
       </a>
-      <a href="https://www.amazon.co.jp/hiratabokujo" target="_blank" class="btn">
-        <span>Amazon店</span>
-      </a>
       <a href="https://www.tabechoku.com/producers/20661" target="_blank" class="btn">
         <span>食べチョク店</span>
       </a>

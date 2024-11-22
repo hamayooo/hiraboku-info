@@ -122,6 +122,11 @@ include $path . 'libs/meta.php';
 								<div class="address"><a target="_blank" href="https://goo.gl/maps/zoaCtkij8BNDzoia7">山形県酒田市楢橋字大林152-1</a></div>
 								<div class="tel"><a href="tel:0234522025">0234-52-2025</a></div>
 							</div>
+              <div class="box">
+								<div class="first">亀ヶ崎工場</div>
+								<div class="address"><a target="_blank" href="https://maps.app.goo.gl/Hs4rBfpcy9i1f3wf6">山形県酒田市亀ヶ崎5-11-3</a></div>
+								<div class="tel"><a href="tel:08031955388">080-3195-5388</a></div>
+							</div>
 						</dd>
 					</div>
 					<div class="item">

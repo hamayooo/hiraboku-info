@@ -264,6 +264,10 @@ include $path . 'libs/meta.php';
 						<th>事業所・営業所所在地</th>
 						<td>北海道、山形、宮城、群馬、東京、大阪</td>
 					</tr>
+          <tr>
+						<th>取引銀行</th>
+						<td>きらやか銀行、荘内銀行、山形銀行、日本政策金融公庫、みずほ銀行、三菱UFJ銀行、三井住友銀行、鶴岡信用金庫、商工中金、七十七銀行</td>
+					</tr>
 				</table>
 				<a href="/about/group/" class="more">グループ企業</a>
 			</div>

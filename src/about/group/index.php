@@ -324,21 +324,7 @@ include $path . 'libs/meta.php';
 						</dd>
 					</div>
 					<div class="item">
-						<dt><a href="<?php echo APP_URL; ?>shop/tamataka/">玉川高島屋S･C店</a></dt>
-						<dd>
-							<div class="box">
-								<div class="first">
-									<ul class="tags">
-										<li class="insyoku">飲食店</li>
-									</ul>
-								</div>
-								<div class="address"><a target="_blank" href="https://goo.gl/maps/EE5PhLXmbxAVit4c9">東京都世田谷区玉川3-17-1<br>玉川高島屋S・C本館6F</a></div>
-								<div class="tel"><a href="tel:0337001729">03-3700-1729</a></div>
-							</div>
-						</dd>
-					</div>
-					<!-- <div class="item">
-						<dt><a href="<?php echo APP_URL; ?>shop/ecute-tokyo/">エキュート東京店</a></dt>
+						<dt><a href="<?php echo APP_URL; ?>shop/ecute-omiya/">エキュート大宮店</a></dt>
 						<dd>
 							<div class="box">
 								<div class="first">
@@ -346,11 +332,11 @@ include $path . 'libs/meta.php';
 										<li class="buppan">物販店</li>
 									</ul>
 								</div>
-								<div class="address"><a target="_blank" href="https://goo.gl/maps/tSpm9bQVtHfd9SkU6">東京都千代田区丸の内1-9-1<br>JR東日本東京駅構内1F サウスコート内</a></div>
-								<div class="tel"><a href="tel:0332118927">03-3211-8927</a></div>
+								<div class="address"><a target="_blank" href="https://maps.app.goo.gl/jzsnggtTjvje4hzk9">埼玉県さいたま市大宮区錦町630<br>エキュート大宮</a></div>
+								<div class="tel"><a href="tel:0486440029">048-644-0029</a></div>
 							</div>
 						</dd>
-					</div> -->
+					</div>
 				</dl>
 			</div>
 		</section>

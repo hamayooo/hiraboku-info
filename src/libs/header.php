@@ -118,7 +118,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>
                 <a href="<?php echo APP_URL; ?>shop/fujisaki/">仙台藤崎店</a>
               </li>
-
+              <li>
+                <a href="<?php echo APP_URL; ?>shop/ecute-omiya/">エキュート大宮店</a>
+              </li>
             </ul>
           </div>
         </div>

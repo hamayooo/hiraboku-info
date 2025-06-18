@@ -129,16 +129,6 @@ include $path . 'libs/meta.php';
 							</div>
 						</dd>
 					</div>
-					<div class="item">
-						<dt>外食小売本部</dt>
-						<dd>
-							<div class="box">
-								<div class="first">本社事務所</div>
-								<div class="address"><a target="_blank" href="https://goo.gl/maps/RnMZccrKVUBX4SFcA">山形県酒田市みずほ2-17-8</a></div>
-								<div class="tel"><a href="tel:0234257285">0234-25-7285</a></div>
-							</div>
-						</dd>
-					</div>
 				</dl>
 			</div>
 		</section>
@@ -286,7 +276,7 @@ include $path . 'libs/meta.php';
 										<li class="buppan">物販店</li>
 									</ul>
 								</div>
-								<div class="address"><a target="_blank" href="https://goo.gl/maps/1ckkzPKRarEiHeTC6">山形県酒田市松原南５-６</a></div>
+								<div class="address"><a target="_blank" href="https://maps.app.goo.gl/Ny4HV2f6narBWysZ7">山形県酒田市大宮町1-8-15</a></div>
 								<div class="tel"><a href="tel:05017454129">050-1745-4129</a><br>※9:00-17:30　日曜除く</div>
 							</div>
 						</dd>
